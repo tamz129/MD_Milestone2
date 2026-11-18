@@ -1,0 +1,3 @@
+Bagging: latar belakangnya, satu Decision Tree gampang overfitting dan nggak stabil. Cara kerjanya: ambil sampel bootstrap, latih banyak model, lalu rata-ratakan hasilnya.
+Random Forest vs Gradient Boosting: RF membangun tree bersamaan dan dipisah - pisah lalu dirata-ratakan, jadi fokusnya mengurangi varian varian. Gradient Boosting itu nge build tree satu per satu, dan setiap tree baru memperbaiki kesalahan tree sebelumnya, jadi fokusnya mengurangi bias.
+Cross Validation: data train dibagi jadi K bagian, model dilatih dan diuji K kali bergantian, lalu dihitung mean dan std. Saya memakai cross_val_score (5 fold) dan di RandomizedSearchCV (3 fold).
